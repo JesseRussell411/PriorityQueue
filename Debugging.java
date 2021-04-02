@@ -8,17 +8,7 @@
  *
  * @author jesse
  */
-import java.util.HashMap;
 import java.util.Random;
-import java.util.SortedMap;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
 public class Debugging{
     public static void main(String[] args){
         PriorityQueue<Integer> q = new PriorityQueue<>();
@@ -27,7 +17,7 @@ public class Debugging{
         for(int i = 0; i < 100; ++i)
             q.add(rand.nextInt());
         
-        System.out.println("Accending:\n--------------------");
+        System.out.println("Ascending:\n--------------------");
         while(q.notEmpty())
             System.out.println(q.poll());
         
